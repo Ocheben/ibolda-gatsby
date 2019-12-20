@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import { Content, SText } from '../components/styledComponents'
 
 export const IndexPageTemplate = ({
   image,
@@ -16,6 +17,32 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    <Content id="main">
+      <Content id="banner" height="70vh" flex>
+        <SText size="30px" weight="600">Ibolda Health</SText>
+      </Content>
+      <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
+        <SText align="center" color="#444444" size="28px" weight="600">Who we are</SText>
+        <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
+          <Content width="50%"></Content>
+          <Content width="50%">
+            <SText color="#444444" size="20px">
+            IBOLDA Health International Limited (IBHIL) is a professional consultancy/Research firm founded in 2009 that applies expertise in the field of medicine and behavioral sciences to solve the numerous health problems of the societies with the aim of improving the health of the community
+            </SText>
+          </Content>
+        </Content>
+      </Content>
+      <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" >
+        <SText align="center" color="#444444" size="28px" weight="600">Our Mission</SText>
+        <Content flex horizontal width="80%" align="center" justify="center" vmargin="3em">
+          <Content width="70%">
+            <SText color="#444444" size="20px" align="center">
+            To increase our client’s competence, ability and capability in Research, Data capturing, processing and Monitoring and Evaluation of projects through innovative and participatory based approaches. In our mission we define clients to include; individuals, organizations, and communities, while innovative and participatory based approaches imply demand driven, sensitive and a mix of value-added initiatives.
+            </SText>
+          </Content>
+        </Content>
+      </Content>
+    </Content>
     <div
       className="full-width-image margin-top-0"
       style={{
