@@ -59,6 +59,11 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: Vision, name: vision, widget: text}
+          - {label: Mision, name: mission, widget: text}
+          - {label: "Organisation Structure", name: "structure", widget: "object", fields: [{label: Title, name: title, widget: text}, {label: Description, name: description, widget: text}]}
+          - {label: "Core Team", name: core, widget: object, fields: [{label: Title, name: title, widget: text}, {label: Description, name: description, widget: text}, {label: Functions, name: functions, widget: list, fields: [{label: Function, name: function, widget: text}]}]}
+          - {label: "Team List", name: team, widget: list, fields: [{label: Name, name: name, widget: text}]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
