@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About our values now  bro
+title: About our values
 ---
 
 
