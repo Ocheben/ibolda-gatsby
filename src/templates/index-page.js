@@ -17,7 +17,8 @@ export const IndexPageTemplate = ({ frontmatter: {
   mainpitch,
   description,
   intro,
-  mission
+  mission,
+  activities
 }}) => (
   <div>
     <Content id="main">
@@ -42,7 +43,7 @@ export const IndexPageTemplate = ({ frontmatter: {
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
           <Content width="45%">
             <SText color="#444444" size="20px" lineHeight={2} align="justify">
-            IBHIL’s areas of focus are on, Research, Data capturing, Data collection and Analysis, Independent Verification Agent, Capacity Building/Training, Medical Mission/Outreaches,  Monitoring and Evaluation services on health issues like Neonatal and child health, maternal health, reproductive and sexual health, health system strengthening, policy and strategy, advocacy for uptake of services and disease prevention. 
+              {activities}
             </SText>
           </Content>
           <Content width="45%">
@@ -214,6 +215,7 @@ export const pageQuery = graphql`
         heading
         subheading
         mission
+        activities
         mainpitch {
           title
           description

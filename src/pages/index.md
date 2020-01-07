@@ -5,6 +5,7 @@ image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mission: To increase our client’s competence, ability and capability in Research, Data capturing, processing and Monitoring and Evaluation of projects through innovative and participatory based approaches. In our mission we define clients to include; individuals, organizations, and communities, while innovative and participatory based approaches imply demand driven, sensitive and a mix of value-added initiatives.
+activities: IBHIL’s areas of focus are on, Research, Data capturing, Data collection and Analysis, Independent Verification Agent, Capacity Building/Training, Medical Mission/Outreaches,  Monitoring and Evaluation services on health issues like Neonatal and child health, maternal health, reproductive and sexual health, health system strengthening, policy and strategy, advocacy for uptake of services and disease prevention. 
 mainpitch:
   title: Who we are
   description: >-
