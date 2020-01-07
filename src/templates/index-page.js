@@ -6,8 +6,10 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import { Content, SText } from '../components/styledComponents'
+import doctora from '../img/doctora.svg'
+import doctorb from '../img/doctorb.svg'
 
-export const IndexPageTemplate = ({
+export const IndexPageTemplate = ({ frontmatter: {
   image,
   title,
   heading,
@@ -15,35 +17,51 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-}) => (
+  mission
+}}) => (
   <div>
     <Content id="main">
       <Content id="banner" height="70vh" flex>
         <SText size="30px" weight="600">Ibolda Health</SText>
       </Content>
       <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
-        <SText align="center" color="#444444" size="28px" weight="600">Who we are</SText>
+        <SText align="center" color="#444444" size="28px" weight="600">{mainpitch.title}</SText>
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
-          <Content width="50%"></Content>
-          <Content width="50%">
-            <SText color="#444444" size="20px">
-            IBOLDA Health International Limited (IBHIL) is a professional consultancy/Research firm founded in 2009 that applies expertise in the field of medicine and behavioral sciences to solve the numerous health problems of the societies with the aim of improving the health of the community
+          <Content width="45%">
+            <img src={doctora} alt="footer logo" />
+          </Content>
+          <Content width="45%">
+            <SText color="#444444" size="20px" lineHeight={2} align="justify">
+            {mainpitch.description}
             </SText>
           </Content>
         </Content>
       </Content>
-      <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" >
+      <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em">
+        <SText align="center" color="#444444" size="28px" weight="600">What we do</SText>
+        <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
+          <Content width="45%">
+            <SText color="#444444" size="20px" lineHeight={2} align="justify">
+            IBHIL’s areas of focus are on, Research, Data capturing, Data collection and Analysis, Independent Verification Agent, Capacity Building/Training, Medical Mission/Outreaches,  Monitoring and Evaluation services on health issues like Neonatal and child health, maternal health, reproductive and sexual health, health system strengthening, policy and strategy, advocacy for uptake of services and disease prevention. 
+            </SText>
+          </Content>
+          <Content width="45%">
+            <img src={doctorb} alt="footer logo" />
+          </Content>
+        </Content>
+      </Content>
+      <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
         <SText align="center" color="#444444" size="28px" weight="600">Our Mission</SText>
         <Content flex horizontal width="80%" align="center" justify="center" vmargin="3em">
           <Content width="70%">
-            <SText color="#444444" size="20px" align="center">
-            To increase our client’s competence, ability and capability in Research, Data capturing, processing and Monitoring and Evaluation of projects through innovative and participatory based approaches. In our mission we define clients to include; individuals, organizations, and communities, while innovative and participatory based approaches imply demand driven, sensitive and a mix of value-added initiatives.
+            <SText color="#444444" size="20px" align="center" lineHeight={2}>
+            {mission}
             </SText>
           </Content>
         </Content>
       </Content>
     </Content>
-    <div
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -137,7 +155,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </div>
 )
 
@@ -155,7 +173,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -166,6 +183,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        frontmatter={frontmatter}
       />
     </Layout>
   )
@@ -195,6 +213,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        mission
         mainpitch {
           title
           description
