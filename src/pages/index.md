@@ -7,8 +7,12 @@ subheading: Support sustainable farming while enjoying a cup
 mission: To increase our client’s competence, ability and capability in Research, Data capturing, processing and Monitoring and Evaluation of projects through innovative and participatory based approaches. In our mission we define clients to include; individuals, organizations, and communities, while innovative and participatory based approaches imply demand driven, sensitive and a mix of value-added initiatives.
 mainpitch:
   title: Who we are
-  description: >
-    IBOLDA Health International Limited (IBHIL) is a professional consultancy/Research firm founded in 2009 that applies expertise in the field of medicine and behavioral sciences to solve the numerous health problems of the societies with the aim of improving the health of the community
+  description: >-
+    IBOLDA Health International Limited (IBHIL) is a professional
+    consultancy/Research firm founded in 2009 that applies expertise in the
+    field of medicine and behavioural sciences to solve the numerous health
+    problems of the societies with the aim of improving the health of the
+    community.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -66,3 +70,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
