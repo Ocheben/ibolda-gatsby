@@ -77,7 +77,7 @@ export const SText = styled.p`
 
 export const SemiCircle = styled.div`
     height: ${props => (props.size || '10px')};
-    background: ${props => (props.bg || '#4285BC')};
+    background: ${props => (props.bg || '#00796b')};
     position: absolute;
     bottom: 0;
     animation: ${fadeIn} 0.3s linear;
@@ -87,7 +87,7 @@ export const SemiCircle = styled.div`
 `
 export const Circle = styled.div`
     height: ${props => (props.size || '20px')};
-    background: ${props => (props.bg || '#4285BC')};
+    background: ${props => (props.bg || '#00796b')};
     position: absolute;
     left: 0;
     animation: ${fadeIn} 0.3s linear;
