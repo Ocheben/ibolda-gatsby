@@ -92,7 +92,7 @@ export const Circle = styled.div`
     left: 0;
     animation: ${fadeIn} 0.3s linear;
     width: ${props => (props.size || '20px')};
-    border-radius: 50%
+    border-radius: 50%;
 `
 
 export const SButton = styled.button`
