@@ -8,6 +8,7 @@ import BlogRoll from '../components/BlogRoll'
 import { Content, SText } from '../components/styledComponents'
 import doctora from '../img/doctora.svg'
 import doctorb from '../img/doctorb.svg'
+import banner from '../img/banner.svg'
 
 export const IndexPageTemplate = ({ frontmatter: {
   image,
@@ -22,8 +23,18 @@ export const IndexPageTemplate = ({ frontmatter: {
 }}) => (
   <div>
     <Content id="main">
-      <Content id="banner" height="70vh" flex>
-        <SText size="30px" weight="600">Ibolda Health</SText>
+      <Content id="intro" minHeight="100vh" flex align="center" justify="center">
+        <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
+          <Content width="45%">
+            <img src={banner} alt="footer logo" />
+          </Content>
+          <Content width="45%">
+            <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{heading || ''}</SText>
+            <SText color="#444444" size="20px" lineHeight={2} align="justify">
+            {subheading || ''}
+            </SText>
+          </Content>
+        </Content>
       </Content>
       <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
         <SText align="center" color="#444444" size="28px" weight="600">{mainpitch.title}</SText>
