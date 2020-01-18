@@ -32,6 +32,8 @@ experience:
     projectName: >-
       Performance Monitoring Service Support Organization(PMSSO) of all the 115
       CSOs benefitting from HPDPII- HAF project 
-    reference: 'Director, Strategic Knowledge Management (SKM).'
+    reference: |-
+      Director, Strategic Knowledge Management (SKM).
+      Director Partnership Dept.NACA.
 ---
 
