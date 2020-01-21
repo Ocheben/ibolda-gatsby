@@ -66,6 +66,15 @@ collections:
           - {label: "Core Team", name: core, widget: object, fields: [{label: Title, name: title, widget: text}, {label: Description, name: description, widget: text}, {label: Functions, name: functions, widget: list, fields: [{label: Function, name: function, widget: text}]}]}
           - {label: "Team List", name: team, widget: list, fields: [{label: Name, name: name, widget: text}]}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Address", name: "offices", widget: "list", fields: [{label: Office Name, name: name, widget: text}, {label: Office Address, name: address, widget: text}]}
+          - {label: "Emails", name: "emails", widget: "list", fields: [{label: Email, name: email, widget: text}]}
+          - {label: "Phones", name: "phones", widget: "list", fields: [{label: Phone, name: phone, widget: text}]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

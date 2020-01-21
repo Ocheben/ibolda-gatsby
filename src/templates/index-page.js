@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({ frontmatter: {
           </Content>
         </Content>
       </Content>
-      <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
+      <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#ffffff">
         <SText align="center" color="#444444" size="28px" weight="600">{mainpitch.title}</SText>
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
           <Content width="45%">
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({ frontmatter: {
           </Content>
         </Content>
       </Content>
-      <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" bg="#e9e9e9">
+      <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" bg="#ffffff">
         <SText align="center" color="#444444" size="28px" weight="600">Our Mission</SText>
         <Content flex horizontal width="80%" align="center" justify="center" vmargin="3em">
           <Content width="70%">
