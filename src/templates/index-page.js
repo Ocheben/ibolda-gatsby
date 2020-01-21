@@ -11,13 +11,10 @@ import doctorb from '../img/doctorb.svg'
 import banner from '../img/banner.svg'
 
 export const IndexPageTemplate = ({ frontmatter: {
-  image,
   title,
   heading,
   subheading,
   mainpitch,
-  description,
-  intro,
   mission,
   activities
 }}) => (
@@ -188,13 +185,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
         frontmatter={frontmatter}
       />
     </Layout>
@@ -229,21 +219,6 @@ export const pageQuery = graphql`
         activities
         mainpitch {
           title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
           description
         }
       }

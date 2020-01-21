@@ -4,8 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout';
 import { Content, SText } from '../components/styledComponents';
 
-export const PortfolioTemplate = ({ title, content, contentComponent, experience }) => {
-  const PageContent = contentComponent || Content
+export const PortfolioTemplate = ({ title, experience }) => {
 
   return (
     <Content flex align="center" vpadding="5em">
@@ -44,7 +43,6 @@ const Portfolio = ({ data }) => {
         // contentComponent={HTMLContent}
         title={post.frontmatter.title}
         experience={post.frontmatter.experience}
-        content={post.html}
       />
     </Layout>
   )
