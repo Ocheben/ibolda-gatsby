@@ -1,7 +1,6 @@
 ---
 templateKey: portfolio-page
 title: The Portfolio
-image: /img/jumbotron.jpg
 heading: Our Portfolio
 experience:
   - client: AFENET/CDC
