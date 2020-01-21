@@ -1,7 +1,9 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
-import { Content, SText } from '../../components/styledComponents'
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import Layout from '../components/Layout'
+import { Content, SText } from '../components/styledComponents'
 
 function encode(data) {
   return Object.keys(data)
@@ -9,7 +11,7 @@ function encode(data) {
     .join('&')
 }
 
-export default class Index extends React.Component {
+export class ContactPageTemplate extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isValidated: false }
@@ -35,15 +37,15 @@ export default class Index extends React.Component {
   }
 
   render() {
+    const { title, offices, emails, phones } = this.props
     return (
-      <Layout>
-        <Content flex align="center" justify="center" minHeight="70vh">
+        <Content flex align="center" justify="center" minHeight="90vh">
           <Content flex horizontal width="80%" justify="space-between" align="center">
             <Content width="45%" flex justify="center">
               <section className="section">
                 <div className="container">
                   <div className="content">
-                    <h1>Contact</h1>
+                    <h1>{title}</h1>
                     <form
                       name="contact"
                       method="post"
@@ -116,21 +118,76 @@ export default class Index extends React.Component {
             </Content>
             <Content width="45%">
               <Content vmargin="1em">
-              <SText weight="600" size="32px" color="#444444">Our Headquaters</SText>
-              <SText  size="20px" color="#444444">House 1, Road 3, Pengassan-Estate, Lokogoma - District. Abuja, FCT Nigeria.</SText>
+              <SText weight="600" size="32px" color="#444444">Address</SText>
+              {
+                Array.isArray(offices) && offices.map(office => (
+                  <Content vmargin="0.5em">
+                    <SText weight="600" size="24px" color="#444444">{office.name}</SText>
+                    <SText  size="20px" color="#444444">{office.address}</SText>
+                  </Content>
+                ))
+              }
               </Content>
               <Content vmargin="1em">
               <SText weight="600" size="32px" color="#444444">Phone</SText>
-              <SText  size="20px" color="#444444">+234 (0) 813 324 0242 <br />+234 (0) 805 152 1198 <br />+234 (0)805 532 7060</SText>
+              {
+                Array.isArray(phones) && phones.map(phone => <SText  size="20px" color="#444444">{phone.phone}</SText>)
+              }
               </Content>
               <Content vmargin="1em">
               <SText weight="600" size="32px" color="#444444">Email</SText>
-              <SText  size="20px" color="#444444">iboldahealth2009@ymail.com<br />babarindejames@yahoo.com</SText>
+              {
+                Array.isArray(emails) && emails.map(email => <SText  size="20px" color="#444444">{email.email}</SText>)
+              }
               </Content>
             </Content>
           </Content>
         </Content>
-      </Layout>
     )
   }
 }
+
+const ContactPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+  return (
+    <Layout>
+      <ContactPageTemplate
+        title={frontmatter.title}
+        offices={frontmatter.offices}
+        emails={frontmatter.emails}
+        phones={frontmatter.phones}
+      />
+    </Layout>
+  )
+}
+
+ContactPage.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
+}
+
+export default ContactPage
+
+export const contactPageQuery = graphql`
+  query ContactPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        offices {
+          name
+          address
+        }
+        emails {
+          email
+        }
+        phones {
+          phone
+        }
+      }
+    }
+  }
+`
