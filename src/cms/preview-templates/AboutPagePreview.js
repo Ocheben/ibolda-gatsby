@@ -11,6 +11,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
         structure={data.structure || {}}
         core={data.core || {}}
         team={data.team || []}
+        gallery={data.gallery || []}
         vision={data.vision}
         mission={data.mission}
       />
