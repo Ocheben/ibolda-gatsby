@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { AboutPageTemplate } from '../../templates/about-page'
 
-const AboutPagePreview = ({ entry, widgetFor }) => {
+const AboutPagePreview = ({ entry, widgetFor, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   if (data) {
     return (
@@ -11,7 +11,10 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
         structure={data.structure || {}}
         core={data.core || {}}
         team={data.team || []}
-        gallery={data.gallery || []}
+        gallery={{
+          image: getAsset(entry.getIn(['data', 'gallery', 'image'])),
+          caption: entry.getIn(['data', 'gallery', 'caption']),
+        }}
         vision={data.vision}
         mission={data.mission}
       />
