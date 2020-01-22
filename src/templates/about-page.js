@@ -5,8 +5,9 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import { Content, SText } from '../components/styledComponents';
 import doctorc from '../img/doctorsc.svg'
+import Gallery from '../components/Gallery'
 
-export const AboutPageTemplate = ({ title, content, contentComponent, structure, core, team, vision, mission }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, structure, core, team, vision, mission, gallery }) => {
   // const PageContent = contentComponent || Content
 
   return (
@@ -68,6 +69,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent, structure,
           </ol>
         </Content>
       </Content>
+      <Content width="70%" vmargin="2em">
+      <SText weight="600" vmargin="0.5em" size="36px" color="#444444">Our Gallery</SText>
+      <Gallery gallery={gallery} />
+      </Content>
     </Content>
   )
 }
@@ -80,7 +85,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
-  const { structure, core, team, vision, mission } = post.frontmatter;
+  const { structure, core, team, vision, mission, gallery } = post.frontmatter;
   return (
     <Layout>
       <AboutPageTemplate
@@ -90,6 +95,7 @@ const AboutPage = ({ data }) => {
         team={team}
         vision={vision}
         mission={mission}
+        gallery={gallery}
       />
     </Layout>
   )
@@ -122,6 +128,17 @@ export const aboutPageQuery = graphql`
         }
         team {
           name
+        }
+        gallery {
+          caption
+          image {
+            publicURL
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

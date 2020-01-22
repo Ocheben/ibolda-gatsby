@@ -18,7 +18,7 @@ body {
 	padding-top: 60px;
 	min-height: calc(100vh - 120px);
   }
-  
+
   .mob-menu {
 	height: calc(100vh - 60px);
 	background: #ffffff;
@@ -28,7 +28,7 @@ body {
 	position: fixed;
 	display: none;
   }
-  
+
   @media screen and (max-width: 768px) {
 	.hero-img {
 	  width: 262px;
@@ -47,4 +47,26 @@ body {
 	.logo-img {
 	  width: 80px
 	}
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    background: #ffffff !important;
+  }
+
+  .thumbs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .control-next.control-arrow:before {
+    border-left: 8px solid #fff !important;
+  }
+  .carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #fff !important;
+  }
+
+  .legend {
+    background: rgba(0 ,0 ,0, 0.3) !important;
   }

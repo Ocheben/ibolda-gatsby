@@ -28,4 +28,11 @@ team:
   - name: Dr Olushola Afolabi MBBS, FWCS (ENT) Consultant
   - name: Barr. Musa Aliyu Jubril LLB, BL COMPANY LAWYER/LEGAL ADVISER
   - name: Mr. Peter Akinmola Joseph BNSC Logistic Manager/Resource Mobilization.
+gallery:
+  - caption: A meeting room
+    image: /img/home-jumbotron.jpg
+  - caption: Another meeting room
+    image: /img/products-grid3.jpg
+  - caption: Some other meeting room
+    image: /img/products-grid2.jpg
 ---
