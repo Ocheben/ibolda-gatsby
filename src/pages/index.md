@@ -1,13 +1,12 @@
 ---
 templateKey: index-page
-title: Ibolda health
-image: /img/home-jumbotron.jpg
-heading: Ibolda Health Limited
+title: Ibolda Health International Limited
+heading: Ibolda Health International Limited
 subheading: >-
   Keeping pace with a dynamic world, maximising the satisfaction of our clients
   at all times
 mission: >-
-  To increase our client’s capcity, ability and capability in Research, Data
+  To increase our client’s capacity, ability and capability in Research, Data
   capturing, processing and Monitoring and Evaluation of projects through
   innovative and participatory based approaches. In our mission we define
   clients to include; individuals, organizations, and communities, while
@@ -21,12 +20,12 @@ activities: >-
   health system strengthening, policy and strategy, advocacy for uptake of
   services and disease prevention.
 mainpitch:
-  title: Who we are
   description: >-
     IBOLDA Health International Limited (IBHIL) is a professional
     consultancy/Research firm founded in 2009 that applies expertise in the
     field of medicine and behavioural sciences to solve the numerous health
     problems of the societies with the aim of improving the health of the
     community.
+  title: Who we are
 ---
 
