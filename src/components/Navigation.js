@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { globalHistory } from "@reach/router";
 
 import { Content, SText, SemiCircle, Circle } from "./styledComponents";
-import logo from "../img/logo.svg";
+import logo from "../img/ibolda.svg";
 import menuIcon from "../img/menu-icon.svg";
 import closeIcon from "../img/close-icon.svg";
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               {currentUrl === "/about" && <SemiCircle size="7px" />}
             </Content>
           </Link>
-          <Content width="auto" height="100%" flex align="center">
+          <Content width="3.5em" height="100%" flex align="center">
             <img src={logo} alt="navbar logo" />
           </Content>
           <Link to="/portfolio">
