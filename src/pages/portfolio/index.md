@@ -72,5 +72,11 @@ experience:
       for the control of AIDS (TACA)
     reference: |+
       PM, TACA,  Director of M & E TACA.
+
+  - client: NACA/NPHCDA/GLOBAL- FUND
+    date: '2013'
+    location: All Geo-Political zones in Nigeria and FCT Abuja.
+    projectName: Survey of Primary Health Care Services Utilization in Nigeria.
+    reference: 'Asst.Director/Head of Research, SKM Dept.NACA.'
 ---
 
