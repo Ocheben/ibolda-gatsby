@@ -78,5 +78,13 @@ experience:
     location: All Geo-Political zones in Nigeria and FCT Abuja.
     projectName: Survey of Primary Health Care Services Utilization in Nigeria.
     reference: 'Asst.Director/Head of Research, SKM Dept.NACA.'
+  - client: 'FMC, Jalingo.'
+    date: January 2013
+    location: 'FMC, Jalingo Hall, Jalingo. Taraba State'
+    projectName: >-
+      Training of 300 FMC, Jalingo, Health workers on Health workers Patient
+      Relationship/BCC
+    reference: |
+      Medical Director, FMC, Jalingo, Taraba-State; CMAC, FMC, Jalingo.
 ---
 
