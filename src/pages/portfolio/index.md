@@ -51,5 +51,18 @@ experience:
     reference: >
       Ag.Director,Program Directorate.NACA, Asst.Director Research Unit,SKM
       Dept.NACA
+  - client: NACA/Global Fund
+    date: May 2013 – October 2013
+    location: All Geo-Political zones in Nigeria
+    projectName: Operation Research
+    reference: |
+      DG, NACA, Asst Director Research Unit, SKM Dept.NACA
+  - client: World Bank/KOSACA
+    date: December 2012- January 2013
+    location: 'Lokoja, Kogi State.'
+    projectName: >-
+      Development of Monitoring & Evaluation Work plan for Kogi State Action
+      Committee on AIDS (KOSACA)
+    reference: 'PM, KOSACA, Director of M & E.KOSACA'
 ---
 
