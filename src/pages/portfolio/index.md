@@ -91,5 +91,10 @@ experience:
     location: FCT Abuja
     projectName: 'Training of VIO, Fire servicemen and Paramedical staff of FCTA.Abuja'
     reference: 'Director of Establishment FCTA, Abuja.'
+  - client: National Agency for the Control of AIDS(NACA)/World Bank
+    date: September 2011-January 2012
+    location: FCT Abuja
+    projectName: Triangulation of NASA report against available researches in Nigeria
+    reference: ' Director of SKM, NACA'
 ---
 
