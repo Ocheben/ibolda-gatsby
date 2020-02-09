@@ -34,5 +34,13 @@ experience:
     reference: |-
       Director, Strategic Knowledge Management (SKM).
       Director Partnership Dept.NACA.
+  - client: NACA/Global Fund
+    date: April 2012 – June 2012
+    location: North-Central and South - West Zones in Nigeria
+    projectName: 'NACA/GF Facility Data Audit '
+    reference: |
+      Director, Strategic Knowledge Management (SKM).
+      NACA; Deputy Director, SKM
+      NACA.
 ---
 
