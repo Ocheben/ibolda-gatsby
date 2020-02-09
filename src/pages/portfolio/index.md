@@ -64,5 +64,13 @@ experience:
       Development of Monitoring & Evaluation Work plan for Kogi State Action
       Committee on AIDS (KOSACA)
     reference: 'PM, KOSACA, Director of M & E.KOSACA'
+  - client: World Bank/Taraba SACA(TACA)
+    date: April 2013 – May 2013
+    location: 'Jalingo, Taraba - State'
+    projectName: >-
+      Development of Monitoring & Evaluation Work plan for Taraba State Agency
+      for the control of AIDS (TACA)
+    reference: |+
+      PM, TACA,  Director of M & E TACA.
 ---
 
