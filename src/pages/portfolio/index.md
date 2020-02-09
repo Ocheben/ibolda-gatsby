@@ -42,5 +42,14 @@ experience:
       Director, Strategic Knowledge Management (SKM).
       NACA; Deputy Director, SKM
       NACA.
+  - client: FMOH/NACA/GLOBAL – FUND
+    date: May 2011 – August 2011
+    location: All Geo-Political zones in Nigeria
+    projectName: >-
+      Evaluation of Global Fund Round 5, HIV workplace programme in Private
+      organizations (SMEs), Nigeria.
+    reference: >
+      Ag.Director,Program Directorate.NACA, Asst.Director Research Unit,SKM
+      Dept.NACA
 ---
 
