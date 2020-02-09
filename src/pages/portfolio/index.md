@@ -86,5 +86,10 @@ experience:
       Relationship/BCC
     reference: |
       Medical Director, FMC, Jalingo, Taraba-State; CMAC, FMC, Jalingo.
+  - client: 'Establishment/Training Department FCTA, Abuja'
+    date: February 2011- April  2011
+    location: FCT Abuja
+    projectName: 'Training of VIO, Fire servicemen and Paramedical staff of FCTA.Abuja'
+    reference: 'Director of Establishment FCTA, Abuja.'
 ---
 
