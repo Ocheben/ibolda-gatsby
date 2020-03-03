@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-page
-title: The Portfolio
+title: Our Portfolio
 heading: Our Portfolio
 experience:
   - client: AFENET/CDC
