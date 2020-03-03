@@ -41,7 +41,7 @@ export class ContactPageTemplate extends React.Component {
     return (
         <Content flex align="center" justify="center" minHeight="90vh">
           <Content flex horizontal width="80%" justify="space-between" align="center">
-            <Content width="45%" flex justify="center">
+            <Content width="45%" mobWidth="100%" flex justify="center">
               <section className="section">
                 <div className="container">
                   <div className="content">
@@ -116,7 +116,7 @@ export class ContactPageTemplate extends React.Component {
                 </div>
               </section>
             </Content>
-            <Content width="45%">
+            <Content width="45%" mobWidth="90%">
               <Content vmargin="1em">
               <SText weight="600" size="32px" color="#444444">Address</SText>
               {

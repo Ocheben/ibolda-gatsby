@@ -22,10 +22,10 @@ export const IndexPageTemplate = ({ frontmatter: {
     <Content id="main">
       <Content id="intro" minHeight="100vh" flex align="center" justify="center">
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
-          <Content width="45%">
+          <Content width="45%" mobWidth="90%">
             <img src={banner} alt="footer logo" />
           </Content>
-          <Content width="45%">
+          <Content width="45%" mobWidth="90%">
             <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{heading || ''}</SText>
             <SText color="#444444" size="20px" lineHeight={2} align="justify">
             {subheading || ''}
@@ -36,10 +36,10 @@ export const IndexPageTemplate = ({ frontmatter: {
       <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em" bg="#ffffff">
         <SText align="center" color="#444444" size="28px" weight="600">{mainpitch.title}</SText>
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
-          <Content width="45%">
+          <Content width="45%" mobWidth="80%">
             <img src={doctora} alt="footer logo" />
           </Content>
-          <Content width="45%">
+          <Content width="45%" mobWidth="90%">
             <SText color="#444444" size="20px" lineHeight={2} align="justify">
             {mainpitch.description}
             </SText>
@@ -49,12 +49,12 @@ export const IndexPageTemplate = ({ frontmatter: {
       <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" vpadding="3em">
         <SText align="center" color="#444444" size="28px" weight="600">What we do</SText>
         <Content flex horizontal width="80%" align="center" justify="space-between" vmargin="3em">
-          <Content width="45%">
+          <Content width="45%" mobWidth="90%">
             <SText color="#444444" size="20px" lineHeight={2} align="justify">
               {activities}
             </SText>
           </Content>
-          <Content width="45%">
+          <Content width="45%" mobWidth="80%">
             <img src={doctorb} alt="footer logo" />
           </Content>
         </Content>
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({ frontmatter: {
       <Content id="mission" minHeight="30vh" flex align="center" justify="flex-start" vpadding="3em" bg="#ffffff">
         <SText align="center" color="#444444" size="28px" weight="600">Our Mission</SText>
         <Content flex horizontal width="80%" align="center" justify="center" vmargin="3em">
-          <Content width="70%">
+          <Content width="70%" mobWidth="90%">
             <SText color="#444444" size="20px" align="center" lineHeight={2}>
             {mission}
             </SText>

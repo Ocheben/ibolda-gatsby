@@ -8,7 +8,7 @@ export const PortfolioTemplate = ({ title, experience }) => {
 
   return (
     <Content flex align="center" vpadding="5em">
-      <Content width="70%">
+      <Content width="70%" mobWidth="90%">
         <SText weight="600" size="48px" color="#444444">{title}</SText>
         {
           experience.map(item =>(

@@ -29,6 +29,10 @@ body {
 	display: none;
   }
 
+  .mob-logo {
+    display: none !important
+  }
+
   @media screen and (max-width: 768px) {
 	.hero-img {
 	  width: 262px;
@@ -43,7 +47,11 @@ body {
 	}
 	.mob-menu {
 	  display: block;
-	}
+  }
+  .mob-logo {
+    display: flex !important;
+    position: absolute !important;
+  }
 	.logo-img {
 	  width: 80px
 	}
