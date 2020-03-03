@@ -36,6 +36,9 @@ const Navbar = () => {
             <img src={menuIcon} alt="menu icon" />
           )}
         </div>
+        <Content className="mob-logo" mobWidth="2.5em" mobHeight="100%" flex align="center">
+            <img src={logo} alt="navbar logo" />
+          </Content>
         <Content
           width="70%"
           height="100%"

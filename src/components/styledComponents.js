@@ -72,6 +72,7 @@ export const SText = styled.p`
   line-height: ${props => (props.lineHeight || 1.6)};
   @media(max-width: 768px) {
     font-size: ${props => (props.mobSize || props.size || '17px')};
+    word-wrap: break-word;
   }
 `;
 

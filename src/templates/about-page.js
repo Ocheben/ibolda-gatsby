@@ -25,55 +25,57 @@ export const AboutPageTemplate = ({ title, content, contentComponent, structure,
     //     </div>
     //   </div>
     // </section>
-    <Content flex align="center" vpadding="5em">
-      <Content width="70%">
-        <SText weight="600" size="48px" width="70%" color="#444444">{title}</SText>
-      </Content>
-      <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start">
-        <Content flex horizontal width="80%" align="center" justify="space-between" bmargin="2em">
-          <Content width="45%">
-            <img src={doctorc} alt="footer logo" />
-          </Content>
-          <Content width="45%">
-            <Content bmargin="1em">
-              <SText weight="600" vmargin="0.5em" size="36px" color="#444444" align="center">Our Vision</SText>
-              <SText size="20px" color="#444444" lineHeight={2} align="center">{vision || ''}</SText>
+    <div>
+      <Content flex align="center" mobAlign="center" vpadding="5em" mobWidth="100%">
+        <Content width="70%">
+          <SText weight="600" size="48px" width="70%" color="#444444">{title}</SText>
+        </Content>
+        <Content id="intro" minHeight="50vh" flex align="center" justify="flex-start" mobWidth="90%">
+          <Content flex horizontal width="80%" align="center" justify="space-between" bmargin="2em">
+            <Content width="45%" mobWidth="90%">
+              <img src={doctorc} alt="footer logo" />
             </Content>
-            <Content>
-              <SText weight="600" vmargin="0.5em" size="36px" color="#444444" align="center">Our Mission</SText>
-              <SText size="20px" color="#444444" lineHeight={2} align="center">{mission || ''}</SText>
+            <Content width="45%">
+              <Content bmargin="1em">
+                <SText weight="600" vmargin="0.5em" size="36px" color="#444444" align="center">Our Vision</SText>
+                <SText size="20px" color="#444444" lineHeight={2} align="center">{vision || ''}</SText>
+              </Content>
+              <Content>
+                <SText weight="600" vmargin="0.5em" size="36px" color="#444444" align="center">Our Mission</SText>
+                <SText size="20px" color="#444444" lineHeight={2} align="center">{mission || ''}</SText>
+              </Content>
             </Content>
           </Content>
         </Content>
-      </Content>
-      <Content width="70%">
-        <Content vmargin="2em">
-          <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{structure.title || ''}</SText>
-          <SText size="20px" color="#444444" lineHeight={2} align="justify">{structure.description || ''}</SText>
+        <Content width="70%" align="center" flex mobWidth="90%">
+          <Content vmargin="2em">
+            <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{structure.title || ''}</SText>
+            <SText size="20px" color="#444444" lineHeight={2} align="justify">{structure.description || ''}</SText>
+          </Content>
+          <Content vmargin="2em" mobWidth="90%">
+            <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{core.title || ''}</SText>
+            <SText size="20px" color="#444444" lineHeight={2} align="justify">{core.description || ''}</SText>
+            <ol>
+              {
+                Array.isArray(core.functions) && core.functions.map(item => <SText as="li" size="20px" color="#444444" lineHeight={2}>{item.function}</SText>)
+              }
+            </ol>
+          </Content>
+          <Content mobWidth="90%">
+          <SText vmargin="0.5em" size="20px" color="#444444">The core team includes:</SText>
+            <ol>
+              {
+                Array.isArray(team) && team.map(item => <SText as="li" size="20px" color="#444444" lineHeight={2}>{item.name}</SText>)
+              }
+            </ol>
+          </Content>
         </Content>
-        <Content vmargin="2em">
-          <SText weight="600" vmargin="0.5em" size="36px" color="#444444">{core.title || ''}</SText>
-          <SText size="20px" color="#444444" lineHeight={2} align="justify">{core.description || ''}</SText>
-          <ol>
-            {
-              Array.isArray(core.functions) && core.functions.map(item => <SText as="li" size="20px" color="#444444" lineHeight={2}>{item.function}</SText>)
-            }
-          </ol>
-        </Content>
-        <Content>
-        <SText vmargin="0.5em" size="20px" color="#444444">The core team includes:</SText>
-          <ol>
-            {
-              Array.isArray(team) && team.map(item => <SText as="li" size="20px" color="#444444" lineHeight={2}>{item.name}</SText>)
-            }
-          </ol>
+        <Content width="70%" vmargin="2em" mobWidth="90%">
+        <SText weight="600" vmargin="0.5em" size="36px" color="#444444">Our Gallery</SText>
+        <Gallery gallery={gallery} />
         </Content>
       </Content>
-      <Content width="70%" vmargin="2em">
-      <SText weight="600" vmargin="0.5em" size="36px" color="#444444">Our Gallery</SText>
-      <Gallery gallery={gallery} />
-      </Content>
-    </Content>
+    </div>
   )
 }
 
