@@ -18,7 +18,7 @@ structure:
     directors one of which is named as the Chief Executive Officer (CEO) with
     others anchoring different units. To be able to provide services in an
     efficient and timely manner, we work with Associate Consultants of high
-    reputation and profile in their careers.
+    reputation and profile in their careers
   title: Organization Structure
 core:
   description: >-
