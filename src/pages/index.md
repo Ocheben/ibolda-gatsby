@@ -3,7 +3,7 @@ templateKey: index-page
 title: Ibolda Health International Limited
 heading: Ibolda Health International Limited
 subheading: >-
-  Keeping pace with a dynamic world, maximising the satisfaction of our clients
+  Keeping pace with a modern world, maximising the satisfaction of our clients
   at all times
 mission: >-
   To increase our client’s capacity, ability and capability in Research, Data
