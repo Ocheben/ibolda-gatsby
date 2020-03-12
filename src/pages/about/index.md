@@ -54,6 +54,8 @@ team:
   - name: 'Barr. Musa Aliyu Jubril LLB, BL COMPANY LAWYER/LEGAL ADVISER'
   - name: Mr. Peter Akinmola Joseph BNSC Logistic Manager/Resource Mobilization.
 gallery:
+  - caption: Personnel at the meeting
+    image: /img/gallery1.jpeg
   - caption: Personnel at work
     image: /img/gallery3.jpeg
   - caption: Another meeting
