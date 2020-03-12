@@ -54,6 +54,8 @@ team:
   - name: 'Barr. Musa Aliyu Jubril LLB, BL COMPANY LAWYER/LEGAL ADVISER'
   - name: Mr. Peter Akinmola Joseph BNSC Logistic Manager/Resource Mobilization.
 gallery:
+  - caption: Ibadan Event
+    image: /img/img_20190401_124150.jpg
   - caption: Personnel at the meeting
     image: /img/gallery1.jpeg
   - caption: Personnel at work
